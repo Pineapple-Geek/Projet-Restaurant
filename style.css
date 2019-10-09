@@ -1,0 +1,429 @@
+body
+{
+	background-color:white;
+	font-family: Arial;
+	font-style: normal;
+}
+
+.headerSM{
+  margin-bottom: 10px;
+}
+
+.nav-link{
+  float: right;
+  margin-right: 15px;
+}
+
+section#slider { 
+  margin: 0;
+  padding: 0;
+  width: 100%; 
+  overflow: hidden 
+} 
+
+section#slider figure {
+  position: relative; 
+  width: 600%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  text-align: left;
+  animation: 20s slidy infinite;
+}
+
+section#slider figure img { 
+  width: 16.6666%; 
+  height: auto; 
+  float: left; 
+}
+
+@keyframes slidy {
+  0% { left: 0%; }
+  20% { left: -100%; }
+  40% { left: -200%; }
+  60% { left: -300%; }
+  80% { left: -400%; }
+  100% { left: -500%; }
+}
+
+.menu_acceuil{
+  color :#ababab;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  float: right;
+}
+
+.li_menu_acceuil{
+  float: left;
+  padding: 30px;
+}
+
+#corpsLG{
+  height: 1040px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-color: #ababab;
+  border-width: 1px;
+}
+
+#corpsXS{
+  height: 870px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  border-style: solid;
+  border-color: #ababab;
+  border-width: 1px;
+}
+
+.main_image{
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.date{
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 240px;
+  padding-left: 40px;
+  padding-right: 20px;
+}
+
+.jour{
+  display: block;
+  margin: 0;
+  color : #434343;
+  font-size : 48px;
+}
+
+.mois{
+  display: block;
+  margin: 0;
+	color : #434343;
+  font-size : 24px;
+}
+
+.menuTitre{
+  margin: 0;
+  margin-left: 70px;
+  padding: 0;
+  padding-top: 15px;
+  color : #777777;
+	font-size : 18px;
+}
+
+.menuLegende{
+  margin: 0;
+  padding: 0;
+  margin-left: 70px;
+  color : #000000;
+	font-size : 12px;
+}
+
+.borderline{
+  margin-bottom : 10px;
+  border-bottom: solid 1px #ababab;
+  padding-bottom: 20px;
+}
+
+.borderlinetop{
+  margin-top: 10px;
+  border-top: solid 1px #ababab;
+  padding-top: 20px;
+}
+
+.galerie{
+  display: inline-block;
+  margin: 0;
+  margin-top: 30px;
+  padding: 0;
+}
+
+.galerietext{
+  color : #434343;
+  font-size : 30px;
+  margin: 0;
+  margin-bottom: 15px;
+
+}
+
+.picline_table{
+  border-top: solid 1px #ababab;
+  margin-top: 60px;
+}
+
+.picline{
+  padding-top: 20px;
+  padding-right: 30px;
+}
+
+.picline_end{
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+#footerLG{
+  padding: 0;
+}
+
+#footerXS{
+  padding: 0;
+}
+
+.footerLG{
+  color :#ababab;
+  float: left;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+ul.footerLG 
+{
+  padding: 0px;
+  margin : 0px;
+}
+
+ul.footerLG li:first-child
+{
+  border-bottom: solid 1px #ababab;
+  padding-bottom: 10px;
+  margin-bottom : 20px;
+  font-size : 18px;
+}
+
+ul.footerLG li
+{
+  font-size : 12px;
+}
+
+.footerXS{
+  color :#ababab;
+  float: left;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+ul.footerXS 
+{
+  padding: 0px;
+  margin : 0px;
+}
+
+ul.footerXS li:first-child
+{
+  border-bottom: solid 1px #ababab;
+  padding-bottom: 10px;
+  margin-bottom : 10px;
+  font-size : 12px;
+}
+
+ul.footerXS li
+{
+  font-size : 8px;
+}
+
+.auteurLG{
+  padding-top: 100px;
+  color :#ababab;
+  text-align: center;
+  font-size : 18px;
+}
+
+.auteurXS{
+  padding-top: 40px;
+  color :#ababab;
+  text-align: center;
+  font-size : 12px;
+}
+
+.auteurLG p{
+  margin: 0;
+  padding: 0;
+}
+
+.auteurXS p{
+  margin: 0;
+  padding: 0;
+}
+
+a:link {
+    color: #ababab;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #ababab;
+    text-decoration: none;
+}
+
+a>img{
+  display : inline-block;
+  padding : 0;
+  padding-top : 10px;
+  float: left;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: rgb(127,127,127,0.7);
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(127,127,127, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+/* ----------------------------------------------------------------------------------------------- Pages Réservations---------------------------------------------------------------------------------------------------------------------------------------*/
+
+#corpsLGRest{
+  height: 1180px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-color: #ababab;
+  border-width: 1px;
+}
+
+#corpsXSRest{
+  height: 1080px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  border-style: solid;
+  border-color: #ababab;
+  border-width: 1px;
+}
+
+.main_image_reservation{
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.titre{
+  display: block;
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+form>fieldset{
+  border: none;
+}
+
+form>fieldset>p {
+  color : #474747;
+  font-size : 20px;
+}
+
+
+.formrow {
+  display: block;
+  margin-top: 10px;
+  padding-left: 10px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-radius: 5px;
+  border-width: 1px;
+  background-color: #dbdbdb;
+}
+
+.formrow2 {
+  display: block;
+  margin-top: 10px;
+  padding-left: 10px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-radius: 5px;
+  border-width: 1px;
+  background-color: #dbdbdb;
+}
+
+.formrow3 {
+  display: block;
+  margin-top: 10px;
+  padding-left: 10px;
+  height: 50px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-radius: 5px;
+  border-width: 1px;
+  background-color: #dbdbdb;
+}
+
+.formbuttom {
+  display: block;
+  margin-left: 28%;
+}
+
+.labelinput {
+  display: inline-block;
+  width: 45%;
+}
+
+.labelinput2 {
+  display: inline-block;
+  width: 45%;
+}
+
+.textinput {
+  display: inline-block;
+  width: 45%;
+}
+
+.textinput>input {
+  width: 180px;
+}
+
+.radioinput {
+  display: inline-block;
+}
+
+.radioinput>input {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.radioinput>label {
+  display: inline-block;
+}
+
+.radioinput2 {
+  display: inline-block;
+}
+
+.radioinput2>input {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.radioinput2>label {
+  display: inline-block;
+}
+
+.numberinput{
+  display: inline-block;
+  width: 45%;
+}
+
+.precisioninput{
+  display: inline-block;
+  width: 45%;
+}
+
+.formbuttom>input {
+  display: inline-block;
+  margin-right: 20px;
+  border-radius: 5px;
+  height: 30px;
+  width: 100px;
+}
+
+input:invalid {
+  background-color: #ff7272;
+}

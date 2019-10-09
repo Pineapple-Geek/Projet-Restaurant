@@ -1,0 +1,248 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<title>Tasty - Réservation</title>
+		<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+
+	<header>
+		<div class="container">
+			<div class="d-none d-md-block d-lg-none d-none d-lg-block d-xl-none d-none d-xl-block col-md-12 col-lg-12 col-xl-12">
+		        <img src="images/tasty.jpg" alt="Logo"></img>
+				<UL class="menu_acceuil">
+					<LI class="li_menu_acceuil" ><a href="index.html">ACCUEIL</a></LI>
+					<LI class="li_menu_acceuil" ><a href="carte.html">CONSULTER LA CARTE</a></LI>
+					<LI class="li_menu_acceuil" ><a href="reservations.html">RESERVATION</a></LI>
+				</UL>
+     		</div>
+
+     		<div class="headerSM">
+     		<div class="d-block d-sm-none d-none d-sm-block d-md-none col-xs-12 col-sm-12">
+
+     			<nav class="navbar navbar-expand-md navbar-dark">
+				  <!-- Logo -->
+				  <a class="navbar-brand" href="#"><img src="images/tasty.jpg" alt="Logo"></a>
+
+				  <button class="navbar-toggler btn-outline-dark ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				    <span class="navbar-toggler-icon "></span>
+				  </button>
+
+				  <!-- Navbar links -->
+				  <div class="collapse navbar-collapse bg-dark" id="collapsibleNavbar">
+				    <ul class="navbar-nav">
+				      <li class="nav-item">
+				        <a class="nav-link" href="index.html">ACCEUIL</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="carte.html">CONSULTER LA CARTE</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="reservations.html">RESERVATION</a>
+				      </li> 
+				    </ul>
+				  </div>
+				  </nav>
+				</div>
+			</div>
+		</header>
+
+<div class="container">
+    <section class="d-none d-md-block d-lg-none d-none d-lg-block d-xl-none d-none d-xl-block col-md-12 col-lg-12 col-xl-12" id="corpsLGRest">
+
+    <section id="corps">
+    	<img src="images/reservation.jpg" class="main_image_reservation img-fluid" alt="Restaurant"></img>
+    	<h1 class="titre">Formulaire de réservation</h1>
+    	
+    	<form action="http://isn-malraux62.w.pw/cda/TP_Restaurant/formulaire/traitement.php" method="post" class="bg-secondary rounded offset-xl-3 col-xl-6">
+    		<div class="row">
+    		<div class="col">
+    		<fieldset>
+		    	<p>Étape 1: Vos coordonées</p>
+		    	<div class="formrow"><div class="labelinput"> <label for="nom">Nom :</label> </div> <div class="textinput"> <input type="text" id="name" name="nom" required> </div></div>
+
+			  	<div class="formrow"><div class="labelinput"><label for="prenom">Prénom :</label> </div> <div class="textinput">  <input type="text" id="name" name="prenom" required> </div></div>
+
+				<div class="formrow"><div class="labelinput"><label for="email">Email :</label> </div> <div class="textinput"> <input type="email" id="mail" name="email" required ></div></div>
+
+				<div class="formrow"><div class="labelinput"><label for="tel">Télèphone :</label> </div> <div class="textinput"> <input type="tel" id="phone" name="telephone" required></input></div></div>
+	    	</fieldset>
+
+	    	<fieldset>
+		    		<p>Étape 2: Vos desiderata</p>
+		    		<div class="formrow3"><div class="labelinput2"> <label for="lieu_de_reservation">Lieu de réservation :</label> </div> <div class="radioinput"><label for="terrasse">Terrasse</label> <input type="radio" id="terrasse" name="lieu" value="Terrasse" unchecked> </div>
+
+		    		<div class="radioinput2"><label for="salle">Salle</label> <input type="radio" id="salle" name="lieu" value="Salle" checked> </div> </div> 
+
+		    		<div class="formrow2"><div class="labelinput2"> <label>Nombre de personne :</label> </div> <div class="numberinput"> <input type="number" id="nbrePers" name="nbrePers" value="1" min="1"> </div></div> 
+
+		    		<div class="formrow2"><div class="labelinput2"> <label>Date de réservation :</label> </div> <div class="numberinput"> <input type="date" id="date" name="date"> </div></div> 
+
+		    		<div class="formrow2"><div class="labelinput2"> <label>Heure de réservation :</label> </div> <div class="numberinput"> <select name="heure"> <option value="12h00"selected>12h00</option> <option value="12h15">12h15</option><option value="12h30">12h30</option><option value="12h45">12h45</option><option value="13h00">13h00</option><option value="13h15">13h15</option><option value="13h30">13h30</option><option value="13h45">13h45</option><option value="14h00">14h00</option> </select> </div></div> 
+
+		    		<div class="formrow2"><div class="labelinput2"> <label>Autres précisions:</label> </div> <div class="precisioninput"> <textarea name="precisions" rows="5" cols="25">Autres précisions</textarea></div></div>
+
+	    	</fieldset>
+
+	    	<fieldset>
+		    	<p>Étape 3: Votre confirmation</p>		
+		    	<div class="formbuttom"> <input type="submit" value="RÉSERVER" /> <input type="reset" value="ANNULER" /> </div>
+	    	</fieldset>
+
+	    	</div>
+	    	</div>
+
+	</form>
+	</section>
+	</section>
+
+	<div class="container">
+    <section class="d-none d-sm-block d-md-none d-block d-sm-none col-xs-12 col-sm-12" id="corpsXSRest">
+
+    <section id="corps">
+    	<img src="images/reservation.jpg" class="main_image_reservation img-fluid" alt="Restaurant"></img>
+    	<h1 class="titre">Formulaire de réservation</h1>
+    	<form action="http://isn-malraux62.w.pw/cda/TP_Restaurant/formulaire/traitement.php" method="post" class="form-row bg-secondary rounded col-sm-12">
+    		<div class="row">
+    		<div class="col">
+    		<fieldset>
+		    	<p>Étape 1: Vos coordonées</p>
+		    	<div class="formrow"><div class="labelinput"> <label for="nom">Nom :</label> </div> <div class="textinput"> <input type="text" id="name" name="nom" required> </div></div>
+
+			  	<div class="formrow"><div class="labelinput"><label for="prenom">Prénom :</label> </div> <div class="textinput">  <input type="text" id="name" name="prenom" required> </div></div>
+
+				<div class="formrow"><div class="labelinput"><label for="email">Email :</label> </div> <div class="textinput"> <input type="email" id="mail" name="email" required ></div></div>
+
+				<div class="formrow"><div class="labelinput"><label for="tel">Télèphone :</label> </div> <div class="textinput"> <input type="tel" id="phone" name="telephone" required></input></div></div>
+	    	</fieldset>
+
+	    	<fieldset>
+		    		<p>Étape 2: Vos desiderata</p>
+		    		<div class="formrow3"><div class="labelinput2"> <label for="lieu_de_reservation">Lieu de réservation :</label> </div> <div class="radioinput"><label for="terrasse">Terrasse</label> <input type="radio" id="terrasse" name="lieu" value="Terrasse" unchecked> </div>
+
+		    		<div class="radioinput2"><label for="salle">Salle</label> <input type="radio" id="salle" name="lieu" value="Salle" checked> </div> </div> 
+
+		    		<div class="formrow2"><div class="labelinput2"> <label>Nombre de personne :</label> </div> <div class="numberinput"> <input type="number" id="nbrePers" name="nbrePers" value="1" min="1"> </div></div> 
+
+		    		<div class="formrow2"><div class="labelinput2"> <label>Date de réservation :</label> </div> <div class="numberinput"> <input type="date" id="date" name="date"> </div></div> 
+
+		    		<div class="formrow2"><div class="labelinput2"> <label>Heure de réservation :</label> </div> <div class="numberinput"> <select name="heure"> <option value="12h00"selected>12h00</option> <option value="12h15">12h15</option><option value="12h30">12h30</option><option value="12h45">12h45</option><option value="13h00">13h00</option><option value="13h15">13h15</option><option value="13h30">13h30</option><option value="13h45">13h45</option><option value="14h00">14h00</option> </select> </div></div> 
+
+		    		<div class="formrow2"><div class="labelinput2"> <label>Autres précisions:</label> </div> <div class="precisioninput"> <textarea name="precisions" rows="5" cols="25">Autres précisions</textarea></div></div>
+
+	    	</fieldset>
+
+	    	<fieldset>
+		    	<p>Étape 3: Votre confirmation</p>		
+		    	<div class="formbuttom"> <input type="submit" value="RÉSERVER" /> <input type="reset" value="ANNULER" /> </div>
+	    	</fieldset>
+	    	</div>
+	    	</div>
+
+	</form>
+	</section>
+	</section>
+
+
+	<footer id="footerLG">
+		<div class="container">
+		    <div class="row">
+		    	<div class="d-none d-xl-block d-none d-lg-block d-xl-none d-none d-md-block d-lg-none col-md-3 col-lg-3 col-xl-3">
+					<UL class="footerLG">
+					<LI>LOCALISATION</LI>
+					<LI><img src="images/logo_localisation.jpg" alt="Maison"><a href="https://www.google.com/maps/place/Lyc%C3%A9e+Professionnel+Andr%C3%A9+Malraux/@50.5196965,2.6522842,15z/data=!4m5!3m4!1s0x0:0xbda81733e623d799!8m2!3d50.5196965!4d2.6522842">BETHUNE</a></img></LI>
+					</UL>
+				</div>
+
+				<div class="d-none d-xl-block d-none d-lg-block d-xl-none d-none d-md-block d-lg-none col-md-3 col-lg-3 col-xl-3">
+					<UL class="footerLG">
+					<LI>CONTACT</LI>
+					
+					<LI><img src="images/logo_telephone.jpg" alt="Telephone">03.21.00.00.00</img></LI>
+					<LI><img src="images/logo_mail.jpg" alt="Mail"><a href="mailto:tasty@bethune.com">tasty@bethune.com</a></img></LI>
+					</UL>
+				</div>
+
+				<div class="d-none d-xl-block d-none d-lg-block d-xl-none d-none d-md-block d-lg-none col-md-3 col-lg-3 col-xl-3">
+					<UL class="footerLG">
+					<LI>HORAIRES</LI>
+					<LI>Lun-Ven		9h-minuit</LI>
+					<LI>Sam-Dim		9h-2h</LI>
+					</UL>
+				</div>
+
+				<div class="d-none d-xl-block d-none d-lg-block d-xl-none d-none d-md-block d-lg-none col-md-3 col-lg-3 col-xl-3">
+					<UL class="footerLG">
+					<LI>SUIVEZ-NOUS</LI>
+					<LI><a href="http://andre-malraux-bethune.savoirsnumeriques5962.fr/"><img src="images/logo_suiveznous.jpg" alt="Suivez-nous"></img></a></LI>
+					</UL>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="d-none d-xl-block d-none d-lg-block d-xl-none d-none d-md-block d-lg-none col-md-12 col-lg-12 col-xl-12">
+					<div class="auteurLG">
+						<p>HTML5 et CSS3</p>
+						<p>REALISE PAR : NAÏM JEBBOUR</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<footer id="footerXS">
+		<div class="container">
+				    <div class="row">
+				    	<div class="d-none d-sm-block d-md-none d-block d-sm-none col-xs-3 col-sm-3">
+							<UL class="footerXS">
+							<LI>LOCALISATION</LI>
+							<LI><img src="images/logo_localisation.jpg" alt="Maison"><a href="https://www.google.com/maps/place/Lyc%C3%A9e+Professionnel+Andr%C3%A9+Malraux/@50.5196965,2.6522842,15z/data=!4m5!3m4!1s0x0:0xbda81733e623d799!8m2!3d50.5196965!4d2.6522842">BETHUNE</a></img></LI>
+							</UL>
+						</div>
+
+						<div class="d-none d-sm-block d-md-none d-block d-sm-none col-xs-3 col-sm-3">
+							<UL class="footerXS">
+							<LI>CONTACT</LI>
+							
+							<LI><img src="images/logo_telephone.jpg" alt="Telephone">03.21.00.00.00</img></LI>
+							<LI><img src="images/logo_mail.jpg" alt="Mail"><a href="mailto:tasty@bethune.com">tasty@bethune.com</a></img></LI>
+							</UL>
+						</div>
+
+						<div class="d-none d-sm-block d-md-none d-block d-sm-none col-xs-3 col-sm-3">
+							<UL class="footerXS">
+							<LI>HORAIRES</LI>
+							<LI>Lun-Ven		9h-minuit</LI>
+							<LI>Sam-Dim		9h-2h</LI>
+							</UL>
+						</div>
+
+						<div class="d-none d-sm-block d-md-none d-block d-sm-none col-xs-3 col-sm-3">
+							<UL class="footerXS">
+							<LI>SUIVEZ-NOUS</LI>
+							<LI><a href="http://andre-malraux-bethune.savoirsnumeriques5962.fr/"><img src="images/logo_suiveznous.jpg" alt="Suivez-nous"></img></a></LI>
+							</UL>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="d-none d-sm-block d-md-none d-block d-sm-none col-xs-12 col-sm-12">
+							<div class="auteurXS">
+								<p>HTML5 et CSS3</p>
+								<p>REALISE PAR : NAÏM JEBBOUR</p>
+							</div>
+						</div>
+					</div>
+				</div>
+	</footer>
+	
+
+	</body>
+</html>
